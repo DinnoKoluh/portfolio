@@ -1,34 +1,48 @@
-blank_links = {
-    "up": False,
-    "right": False,
-    "down": False,
-    "left": False
+blank_sockets = {
+    "north": "0",
+    "west": "0",
+    "south": "0",
+    "east": "0"
 }
 
-up_links = {
-    "up": True,
-    "right": True,
-    "down": False,
-    "left": True
+up_sockets = {
+    "north": "1",
+    "west": "1",
+    "south": "0",
+    "east": "1"
 }
 
-right_links = {
-    "up": True,
-    "right": True,
-    "down": True,
-    "left": False
+right_sockets = {
+    "north": "1",
+    "west": "0",
+    "south": "1",
+    "east": "1"
 }
 
-down_links = {
-    "up": False,
-    "right": True,
-    "down": True,
-    "left": True
+down_sockets = {
+    "north": "0",
+    "west": "1",
+    "south": "1",
+    "east": "1"
 }
 
-left_links = {
-    "up": True,
-    "right": False,
-    "down": True,
-    "left": True
+left_sockets = {
+    "north": "1",
+    "west": "1",
+    "south": "1",
+    "east": "0"
+}
+
+straight_sockets = {
+    "north": "1",
+    "west": "0",
+    "south": "1",
+    "east": "0"
+}
+
+curve_sockets = {
+    "north": "0",
+    "west": "0",
+    "south": "1",
+    "east": "1"
 }
