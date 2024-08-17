@@ -128,7 +128,7 @@ class Grid:
         """
         for i in range(self.dimension):
             for j in range(self.dimension):
-                if self.entropy_grid[i][j] == []:
+                if self.grid[i][j].is_collapsed():
                     if j > 0 and not self.grid[i][j-1].is_collapsed():
                         self.entropy_grid[i][j-1] = self.get_possible_tiles_for_direction(self.entropy_grid[i][j-1], "west", self.grid[i][j])
                     if j < self.dimension - 1 and not self.grid[i][j+1].is_collapsed():
@@ -197,7 +197,7 @@ CURVE = Tile(name="CURVE", sockets=curve_sockets, tile_path=os.path.join(path_to
 # LEFT = Tile(name="LEFT", sockets=left_sockets, tile_path=os.path.join(path_to_tiles, "left.png"))
 
 # GRID
-grid = Grid(dimension=4, tile_list=[BLANK, TRI, STRAIGHT, CURVE])
+grid = Grid(dimension=8, tile_list=[BLANK, TRI, STRAIGHT, CURVE])
 print(grid.tile_list)
-grid.initiate_collapse(grid.tile_list[2], animate=True)
+grid.initiate_collapse(grid.tile_list[2], animate=False)
 grid.save_grid(path="grids/test.png")
