@@ -1,5 +1,7 @@
-from matplotlib import pyplot as plt, patches
 import numpy as np
+from matplotlib import patches
+from matplotlib import pyplot as plt
+
 # https://stackoverflow.com/questions/42955608/how-can-i-remove-a-plot-with-python
 
 
@@ -116,7 +118,7 @@ def shape_animation():
 
         xx = np.insert(xx, 0, ti + 2 * r0)
         yy = np.append(yy, cy)
-        keep = 100
+        # keep = 100
         # if len(xx) > keep:
         #     xx = xx[-keep:-1]
         #     yy = yy[-keep:-1]

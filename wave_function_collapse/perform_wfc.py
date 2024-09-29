@@ -1,16 +1,18 @@
 from __future__ import annotations
+
 import os
+
 from grid import Grid
 from tile import Tile
-
 from tile_sockets import (
     blank_sockets,
-    up_sockets,
-    deadend_sockets,
     cross_sockets,
-    straight_sockets,
     curve_sockets,
+    deadend_sockets,
+    straight_sockets,
+    up_sockets,
 )
+
 # TODO rotations of unique images
 # https://github.com/mxgmn/WaveFunctionCollapse?tab=readme-ov-file
 
@@ -25,11 +27,13 @@ BLANK = Tile(
 TRI = Tile(
     name="TRI", sockets=up_sockets, tile_path=os.path.join(path_to_tiles, "up.png")
 )
+
 STRAIGHT = Tile(
     name="STRAIGHT",
     sockets=straight_sockets,
     tile_path=os.path.join(path_to_tiles, "straight.png"),
 )
+
 CURVE = Tile(
     name="CURVE",
     sockets=curve_sockets,
@@ -49,9 +53,8 @@ DEADEND = Tile(
 )
 
 
-
 # GRID
-grid = Grid(dimension=8, tile_list=[BLANK, TRI, STRAIGHT, CURVE, CROSS])
+grid = Grid(dimension=5, tile_list=[BLANK, TRI, STRAIGHT, CURVE, CROSS])
 print(grid.tile_list)
-grid.initiate_collapse(grid.tile_list[2], animate=False)
+grid.initiate_collapse(grid.tile_list[2], animate=True)
 grid.save_grid(path="grids/test.png")

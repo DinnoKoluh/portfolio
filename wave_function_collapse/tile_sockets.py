@@ -1,62 +1,64 @@
+from directions import Direction
+
 blank_sockets = {
-    "up": "0",
-    "left": "0",
-    "down": "0",
-    "right": "0"
+    Direction.UP: "0",
+    Direction.LEFT: "0",
+    Direction.DOWN: "0",
+    Direction.RIGHT: "0",
 }
 
 up_sockets = {
-    "up": "1",
-    "left": "1",
-    "down": "0",
-    "right": "1"
+    Direction.UP: "1",
+    Direction.LEFT: "1",
+    Direction.DOWN: "0",
+    Direction.RIGHT: "1",
 }
 
 right_sockets = {
-    "up": "1",
-    "left": "0",
-    "down": "1",
-    "right": "1"
+    Direction.UP: "1",
+    Direction.LEFT: "0",
+    Direction.DOWN: "1",
+    Direction.RIGHT: "1",
 }
 
 down_sockets = {
-    "up": "0",
-    "left": "1",
-    "down": "1",
-    "right": "1"
+    Direction.UP: "0",
+    Direction.LEFT: "1",
+    Direction.DOWN: "1",
+    Direction.RIGHT: "1",
 }
 
 left_sockets = {
-    "up": "1",
-    "left": "1",
-    "down": "1",
-    "right": "0"
+    Direction.UP: "1",
+    Direction.LEFT: "1",
+    Direction.DOWN: "1",
+    Direction.RIGHT: "0",
 }
 
 straight_sockets = {
-    "up": "1",
-    "left": "0",
-    "down": "1",
-    "right": "0"
+    Direction.UP: "1",
+    Direction.LEFT: "0",
+    Direction.DOWN: "1",
+    Direction.RIGHT: "0",
 }
 
 curve_sockets = {
-    "up": "0",
-    "left": "0",
-    "down": "1",
-    "right": "1"
+    Direction.UP: "0",
+    Direction.LEFT: "0",
+    Direction.DOWN: "1",
+    Direction.RIGHT: "1",
 }
 
 cross_sockets = {
-    "up": "1",
-    "left": "1",
-    "down": "1",
-    "right": "1"
+    Direction.UP: "1",
+    Direction.LEFT: "1",
+    Direction.DOWN: "1",
+    Direction.RIGHT: "1",
 }
 
 deadend_sockets = {
-    "up": "0",
-    "left": "0",
-    "down": "1",
-    "right": "0"
+    Direction.UP: "0",
+    Direction.LEFT: "0",
+    Direction.DOWN: "1",
+    Direction.RIGHT: "0",
 }
