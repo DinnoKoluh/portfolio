@@ -13,7 +13,6 @@ from tile_sockets import (
     up_sockets,
 )
 
-# TODO rotations of unique images
 # https://github.com/mxgmn/WaveFunctionCollapse?tab=readme-ov-file
 
 
